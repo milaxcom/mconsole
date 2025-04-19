@@ -1,1 +1,0 @@
-var mconsole_url,notification;notification=function(n,t,e,o){return notifications.push(n,t,e,o)},mconsole_url=function(n){var t,e;return t=$('meta[name="_mconsole_url"]').attr("content"),t=t.replace(/^\/|\/$/g,""),n=n.replace(/^\/|\/$/g,""),n.length>0&&(n="/"+n),e="/"+t+n,e.replace("//","/")};
