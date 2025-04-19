@@ -4,6 +4,4 @@ composer.lock
 .DS_Store
 /node_modules
 /wiki
-public/css
-public/js
 
