@@ -723,6 +723,18 @@ class UploadHandler
                 $image_quality = isset($options['png_quality']) ?
                     $options['png_quality'] : 9;
                 break;
+            case 'webp':
+                $src_func = 'imagecreatefromwebp';
+                $write_func = 'imagewebp';
+                $image_quality = isset($options['webp_quality']) ?
+                    $options['webp_quality'] : 80;
+                break;
+            case 'avif':
+                $src_func = 'imagecreatefromavif';
+                $write_func = 'imageavif';
+                $image_quality = isset($options['avif_quality']) ?
+                    $options['avif_quality'] : 80;
+                break;
             default:
                 return false;
         }
